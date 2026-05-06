@@ -1,0 +1,143 @@
+body {
+margin: 0;
+font-family: 'Segoe UI', sans-serif;
+background: #0f172a;
+color: white;
+}
+
+/* APP LAYOUT */
+.app {
+display: flex;
+height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+width: 250px;
+background: #020617;
+padding: 20px;
+border-right: 1px solid #1e293b;
+}
+
+.sidebar h2 {
+margin-bottom: 20px;
+color: #38bdf8;
+}
+
+.sidebar button {
+display: block;
+width: 100%;
+margin-bottom: 10px;
+padding: 12px;
+background: #0ea5e9;
+border: none;
+border-radius: 8px;
+color: white;
+cursor: pointer;
+transition: 0.3s;
+text-align: left;
+}
+
+.sidebar button:hover {
+background: #0284c7;
+}
+
+/* MAIN AREA */
+.main {
+flex: 1;
+display: flex;
+flex-direction: column;
+height: 100vh;
+}
+
+.main h1 {
+text-align: center;
+color: #38bdf8;
+}
+
+/* CHAT BOX */
+.chat-box {
+flex: 1;
+overflow-y: auto;
+background: #020617;
+padding: 20px;
+border-radius: 10px;
+margin-bottom: 15px;
+}
+
+/* AI MESSAGE */
+.ai-msg {
+background: #1e293b;
+padding: 12px;
+border-radius: 10px;
+margin-bottom: 10px;
+max-width: 70%;
+}
+
+/* USER MESSAGE (future use) */
+.user-msg {
+background: #0ea5e9;
+padding: 12px;
+border-radius: 10px;
+margin-bottom: 10px;
+margin-left: auto;
+max-width: 70%;
+}
+
+/* INPUT BOX */
+.input-box {
+display: flex;
+gap: 10px;
+}
+
+.input-box input {
+flex: 1;
+padding: 12px;
+border-radius: 8px;
+border: none;
+outline: none;
+background: #1e293b;
+color: white;
+}
+
+.input-box button {
+padding: 12px 20px;
+background: #0ea5e9;
+border: none;
+border-radius: 8px;
+color: white;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.input-box button:hover {
+background: #0284c7;
+}
+
+/* SCROLLBAR (optional cool look) */
+.chat-box::-webkit-scrollbar {
+width: 6px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+background: #0ea5e9;
+border-radius: 10px;
+}
+
+
+.notes-box {
+    white-space: pre-wrap;
+    line-height: 1.6;
+    font-size: 16px;
+
+    padding: 20px;
+    border-radius: 10px;
+    background: #1e1e2f;
+
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    
+    color: #ffffff;
+
+}

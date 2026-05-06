@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>AI Study Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="app">
+
+```
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>📚 Subjects</h2>
+
+    <form method="POST">
+        <button name="subject" value="dbms_notes.pdf">DBMS</button>
+        <button name="subject" value="dsa_notes.pdf">DSA</button>
+        <button name="subject" value="python_notes.pdf">Python</button>
+        <button name="subject" value="java_notes.pdf">Java</button>
+        <button name="subject" value="oop_notes.pdf">OOP</button>
+        <button name="subject" value="machine_learning_notes.pdf">ML</button>
+        <button name="subject" value="other">Other</button>
+    </form>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+    <h1>🤖 AI Study Assistant</h1>
+
+    <!-- CHAT BOX -->
+    <div class="chat-box">
+
+        {% if response %}
+        <div class="ai-msg notes-box" style="white-space: pre-line;">
+            {{ response|safe }}
+        </div>
+        {% endif %}
+
+    </div>
+
+    <!-- INPUT FORM -->
+    <form method="POST" class="input-box">
+
+        <input type="hidden" name="subject" value="{{ selected_pdf }}">
+
+        <input type="text" name="message" placeholder="Ask your question..." required>
+
+        <button type="submit">Ask</button>
+
+    </form>
+
+</div>
+```
+
+</div>
+
+<!-- TYPING ANIMATION -->
+
+<script>
+const text = document.getElementById("aiResponse");
+
+if (text) {
+    let content = text.innerHTML;
+    text.innerHTML = "";
+    let i = 0;
+
+    function typeEffect() {
+        if (i < content.length) {
+            text.innerHTML += content.charAt(i);
+            i++;
+            setTimeout(typeEffect, 10);
+        }
+    }
+
+    typeEffect();
+}
+</script>
+
+</body>
+</html>
