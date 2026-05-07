@@ -1,12 +1,16 @@
-# 🤖 AI Assistant Project
+# 🤖 AI Study Assistant
 
-An intelligent AI Assistant built to help users with tasks like answering questions, generating responses, and improving productivity using Artificial Intelligence and Natural Language Processing.
+An intelligent AI Study Assistant designed to help students learn technical subjects like DBMS, DSA, Python, Java, OOP, and Machine Learning using Artificial Intelligence and Natural Language Processing.
 
 ---
 
 # 📌 Features
 
+* 🤖 AI-powered study chatbot system
+* 📚 Subject-wise learning support
 * 💬 Chat with AI in real-time
+* 🧾 Detailed explanations for concepts and definitions
+* 🎓 Helps students understand technical subjects easily
 * 🧠 Smart response generation
 * 📄 User-friendly interface
 * ⚡ Fast and responsive system
@@ -22,11 +26,13 @@ An intelligent AI Assistant built to help users with tasks like answering questi
 * HTML
 * CSS
 * JavaScript
+* Responsive Dark UI Design
 
 ## Backend
 
 * Python
-* Flask / Django
+* Flask
+* chatbot.py integration
 
 ## AI / ML
 
@@ -46,12 +52,24 @@ AI-Assistant/
 │
 ├── static/              # CSS, JS, Images
 ├── templates/           # HTML files
-├── app.py               # Main application file
+├── app.py               # Main Flask application
+├── chatbot.py           # AI chatbot logic and response handling
 ├── requirements.txt     # Python dependencies
 ├── model/               # AI/ML models
 ├── README.md            # Project documentation
 └── .gitignore
 ```
+
+---
+
+# 🧠 Chatbot Functionality
+
+The `chatbot.py` file handles the core chatbot logic of the project. It is responsible for:
+
+* Processing user messages
+* Generating AI responses
+* Managing conversation flow
+* Connecting AI/NLP models with the frontend
 
 ---
 
@@ -103,9 +121,39 @@ python app.py
 
 ---
 
-# 📸 Screenshots
+# 📸 Project Screenshot
 
-Add your project screenshots here.
+## AI Study Assistant Interface
+
+![AI Study Assistant UI](screenshots/ai-study-assistant.png)
+
+The project includes a modern dark-themed study dashboard where students can:
+
+* Select subjects from the sidebar
+* Ask questions in the chatbot
+* Get AI-generated explanations instantly
+* Learn programming and technical concepts interactively
+
+Example subjects available:
+
+* DBMS
+* DSA
+* Python
+* Java
+* OOP
+* Machine Learning
+
+> 📌 Save your screenshot inside a folder named `screenshots` with the filename `ai-study-assistant.png` so the image appears properly on GitHub.
+
+---
+
+# ✨ UI Highlights
+
+* Dark modern interface
+* Sidebar-based subject navigation
+* Interactive chatbot response section
+* Simple and student-friendly design
+* Fast response system
 
 ---
 
